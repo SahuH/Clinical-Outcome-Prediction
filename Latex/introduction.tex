@@ -1,0 +1,17 @@
+\section{Introduction}
+
+Our goals for this project are as below:
+\begin{enumerate}
+    \item Predict Clinical Outcomes using first only CT data, and then CT+Clinical data. Later we compare both outcomes to assess the effectiveness
+    \begin{enumerate}
+        \item Death
+        \item Diabetes
+        \item Heart-Attack
+    \end{enumerate}
+    \item Derive a patient's Biological Age
+\end{enumerate}
+
+For (1), we have split the data into train/test and considered relevant key clinical outcome column for that particular prediction, i.e., \textit{DEATH [d from CT]} for Death, \textit{Type 2 Diabetes DX Date [d from CT]} for Diabetes and \textit{MI DX Date [d from CT]} for Heart Attack.We have used 2 approaches for prediction, which we will describe in \textbf{Section 4}.
+
+For (2), we have only considered CT data as an input features. CT data contains columns that are proven biological age markers and have been used widely in clinical research \cite{common_methods_of_biological_age_estimation} \cite{60_new_50} \cite{bio_using_PCA} already. We have formed train data using patient who have died, and rest are grouped into test data to calculate biological age. This is because we know for certainty that patient who died reached their biological limit. The exact methodology is explained in \textbf{Section 4}  
+
