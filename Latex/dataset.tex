@@ -1,0 +1,34 @@
+\section{Dataset}
+The dataset was made available by Perry Pickhardt (Department of Radiology, UW-Madison) who also provided guidance in supervising and evaluating this project. The dataset contains 3 set of columns.
+
+
+\begin{itemize}
+    \item Clinical Data
+    \begin{itemize}
+        \item Cols A-C: anonymized Case ID info
+        \item Col D: Clinical F/U interval [days from CT]
+        \item Cols E-J: pt BMI, sex, age (at time 0=CT date), smoking/drinking hx)
+        \item Col K: FRS = Framingham Risk Score (multi variable 10-yr cardiovascular risk score)
+        \item Cols L-M: FRAX = Fracture risk assessment score (multi-variable 10-yr risk for all and hip fx)
+        \item Col N: Metabolic Syndrome (Y/N/blank=unknown) ? really more of an outcome
+    \end{itemize}
+    \item Clinical Outcomes
+    \begin{itemize}
+        \item Col P: Death
+        \item Cols Q-V: Cardiovascular events w/ dates (CVD=stroke, Heart failure, MI=heart attack; any=positive)
+        \item Col W-X: T2 Diabetes (if dx)
+        \item Cols Y-AH: Pathologic/osteoporotic fracture w/ date (any=positive; femoral=hip fx)
+        \item Cols AI-AJ: Alzheimer’s Dx
+        \item Cols AK-AN: Cancer Dx’s
+        \item Col N: Metabolic Syndrome; could be considered an outcome)
+    \end{itemize}
+    \item Computerized Tomography Data
+    \begin{itemize}
+        \item Col AP: Bone measure/BMD (L1 HU)
+        \item Cols AQ-AU: Fat measures (total/visceral/subcutaneous; V/S ratio; all total body X-section)
+        \item Cols AV-AX: Muscle measures (HU/Area/SMI)
+        \item Col AY: Aortic Calcification (Ag)
+        \item Col AZ: Liver fat (HU)
+
+    \end{itemize}
+\end{itemize}

@@ -1,0 +1,120 @@
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\setlength{\oddsidemargin}{0.25 in}
+\setlength{\evensidemargin}{-0.25 in}
+\setlength{\topmargin}{-0.6 in}
+\setlength{\textwidth}{6.5 in}
+\setlength{\textheight}{8.5 in}
+\setlength{\headsep}{0.75 in}
+\setlength{\parindent}{0 in}
+\setlength{\parskip}{0.1 in}
+
+% ===== PACKAGES =====
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage{mdframed}
+\usepackage{changepage}
+\usepackage{hyperref}
+\newmdenv[
+  topline=false,
+  bottomline=false,
+  skipabove=\topsep,
+  skipbelow=\topsep
+]{siderules}
+\renewcommand{\abstractname}{}
+
+% ===== VARIABLES =====
+\def \R{\mathbb{R}}
+\def \Pr{\mathbb{P}}
+\def \D{{\rm D}}
+\def \N{{\rm N}}
+\def \xx{{\boldsymbol{\rm x}}}
+\def \y{{\rm y}}
+
+
+
+
+% ===== HEADER BOX =====
+\newcommand{\lecture}[2]{
+\pagestyle{myheadings}
+\thispagestyle{plain}
+\newpage
+\noindent
+\begin{center}
+\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal line
+\rule{\textwidth}{0.4pt}\\[1\baselineskip] % Thin horizontal line
+\vbox{\vspace{2mm}
+\hbox to 6.28in { {\bf CS 760: Machine Learning} \hfill Spring 2022 }
+\vspace{4mm}
+\hbox to 6.28in { {\Large \hfill #1  \hfill} }
+\vspace{4mm}
+\hbox to 6.28in { {\scshape Authors:}  #2 \hfill }}
+\vspace{-2mm}
+\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt} % Thin horizontal line
+\rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+\end{center}
+\vspace*{4mm}
+}
+
+
+
+% =============== DOCUMENT ===============
+\begin{document}
+\lecture{Estimating adverse clinical outcomes and Biological Age using CT and Clinical Data}{Ganesh Cheerla(gcheerla), Harsh Sahu(hsahu), Hemalkumar Ratilal Patel(hrpatel5)}
+
+\begin{center}
+{\Large {\sf \underline{\textbf{DO NOT POLLUTE!}} AVOID PRINTING, OR PRINT 2-SIDED MULTIPAGE.}}
+\end{center}
+
+
+\input{abstract}
+\input{introduction}
+\input{related_work}
+\input{dataset}
+\input{approach}
+\input{results}
+\input{conclusion}
+\input{ack}
+
+% \bibliographystyle{acm}
+% \bibliography{references}
+
+\input{ref}
+
+\end{document} 
+\endinput
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
