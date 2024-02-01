@@ -36,8 +36,8 @@ In this approach, we introduced a new column *recency*.
 
 This gives us the chance to fill all NULL values with zeros. However, it results in skewed data shown in the Figure above. Hence, we transformed non-zero values (using Box-cox transform) to a more uniform distribution. Later, we sub-sampled zero samples to be equal to non-zero samples. This provides us with different training/test number of samples than the original. For example, for *death\_recency* we got 838 training samples and 1860 test samples.
 
-![left - skewness in recency, right - skewness made better](images/recency_skewed.png)
-![left - skewness in recency, right - skewness made better](images/recency_fixed.png)
+![left - skewness in recency, right - skewness made better](Latex/images/recency_skewed.png)
+![left - skewness in recency, right - skewness made better](Latex/images/recency_fixed.png)
 
 For each 3 predictions, we perform the following operations:
 
