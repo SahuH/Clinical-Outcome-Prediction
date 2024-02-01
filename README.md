@@ -61,7 +61,7 @@ Based on this assumption, we define the biological age for training data as the 
 
 Here, *bio\_days\_left* follows an exponential decay function (increasing) form as shown in Fig - \ref{fig:exp_decay}
 
-![Example of an exponential decay increasing form plot](images/exp_fn.png)
+![Example of an exponential decay increasing form plot](Latex/images/exp_fn.png)
 
 We calculate *bio\_days\_left* for training data, and then apply the following 2 algorithms:
 
