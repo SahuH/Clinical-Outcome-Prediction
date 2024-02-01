@@ -30,9 +30,11 @@ For each 3 predictions, we perform the following operations:
 
 In this approach, we introduced a new column *recency*.
 
-*death_recency = 1/DEATH[d_from_ CT]*
-*diabetes_recency = 1/DX_Date[d_from_ CT]*
-*heart_attack_recency = 1/MI_DX_Date[d_from_ CT]*
+* *death_recency = 1/DEATH[d_from_ CT]*
+
+* *diabetes_recency = 1/DX_Date[d_from_ CT]*
+
+* *heart_attack_recency = 1/MI_DX_Date[d_from_ CT]*
 
 This gives us the chance to fill all NULL values with zeros. However, it results in skewed data shown in the Figure above. Hence, we transformed non-zero values (using Box-cox transform) to a more uniform distribution. Later, we sub-sampled zero samples to be equal to non-zero samples. This provides us with different training/test number of samples than the original. For example, for *death\_recency* we got 838 training samples and 1860 test samples.
 
